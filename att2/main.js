@@ -4,9 +4,9 @@ const resp2= document.querySelector("h4")
 
 frm.addEventListener("submit", (e)=>{
     const titulo = frm.inTitulo.value
-    const duração = Number(frm.inDuração.value)
+    const duracao = Number(frm.inDuração.value)
 
-    const horas = Math.floor(duração / 60)
+    const horas = Math.floor(duracao / 60)
     const minutos = duração % 60
 
     resp1.innerText = Titulo 
