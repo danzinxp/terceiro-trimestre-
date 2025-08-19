@@ -2,14 +2,14 @@ const frm = document.querySelector("form")
 const resp1= document.querySelector("h3")
 const resp2= document.querySelector("h4")
 
-frm.addEventListener("submit", (e)=>{
+frm.addEventListener("submit", (e) => {
     const titulo = frm.inTitulo.value
-    const duracao = Number(frm.inDuração.value)
+    const duracao = Number(frm.inDuracao.value)
 
     const horas = Math.floor(duracao / 60)
-    const minutos = duração % 60
+    const minutos = duracao % 60
 
-    resp1.innerText = Titulo 
+    resp1.innerText = titulo 
     resp1.innerText = `${horas} hora (s) e ${minutos} minutos(s) `
   
     e.preventDefault()
